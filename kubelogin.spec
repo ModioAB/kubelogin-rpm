@@ -2,7 +2,7 @@
 %define gopkg github.com/int128
 
 Name: kubelogin
-Version: 1.14.2
+Version: 1.14.5
 Release: 1%{?dist}
 BuildArch: x86_64
 Summary: kubectl plugin for Kubernetes OpenID Connect authentication
