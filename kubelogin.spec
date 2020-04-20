@@ -2,7 +2,7 @@
 %define gopkg github.com/int128
 
 Name: kubelogin
-Version: 1.17.1
+Version: 1.19.0
 Release: 1%{?dist}
 BuildArch: x86_64
 Summary: kubectl plugin for Kubernetes OpenID Connect authentication
@@ -12,7 +12,8 @@ Requires: kubernetes-client
 
 Source0: https://%{gopkg}/%{name}/archive/v%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires: golang >= 1.12
+# Upstream uses 1.14.1, but this is not yet available in Fedora
+BuildRequires: golang >= 1.13.9
 BuildRequires: git
 
 %description
